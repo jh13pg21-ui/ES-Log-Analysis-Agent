@@ -1,0 +1,3 @@
+# 测试辅助脚本，不计入语言统计
+ai-agent-station-study-app/src/test/resources/*.py linguist-vendored
+ai-agent-station-study-app/src/test/resources/*.py linguist-generated

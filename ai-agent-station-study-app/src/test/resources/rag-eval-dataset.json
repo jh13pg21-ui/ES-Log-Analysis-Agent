@@ -1,0 +1,2438 @@
+[
+  {
+    "query": "如何搜索支付成功率的时间趋势",
+    "expectedKeywords": [
+      "business.action",
+      "支付",
+      "per_hour",
+      "date_histogram"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "ES 里怎么查某个表的所有慢查询",
+    "expectedKeywords": [
+      "slow_query.table",
+      "bool",
+      "must",
+      "term"
+    ],
+    "expectedDocIds": [
+      "doc_02",
+      "doc_03"
+    ],
+    "minRelevantDocs": 2
+  },
+  {
+    "query": "如何关联一个用户的业务行为和安全事件",
+    "expectedKeywords": [
+      "user.id",
+      "business",
+      "security",
+      "bool"
+    ],
+    "expectedDocIds": [
+      "doc_01",
+      "doc_03"
+    ],
+    "minRelevantDocs": 2
+  },
+  {
+    "query": "duration_ms 超过多少次时日志级别变为 ERROR",
+    "expectedKeywords": [
+      "duration_ms",
+      "5000",
+      "ERROR",
+      "log.level"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "geo.isp 运营商有哪些",
+    "expectedKeywords": [
+      "geo.isp",
+      "中国电信",
+      "中国联通",
+      "中国移动",
+      "教育网"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "如何搜索某个任务最近是否有失败",
+    "expectedKeywords": [
+      "scheduled_task",
+      "执行失败",
+      "result"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "用什么条件查某段时间内的 QPS 趋势",
+    "expectedKeywords": [
+      "date_histogram",
+      "per_hour",
+      "access"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么筛选每个渠道的支付成功率",
+    "expectedKeywords": [
+      "business.channel",
+      "支付",
+      "by_result",
+      "SUCCESS"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么检索某个服务的异常分布",
+    "expectedKeywords": [
+      "error.type",
+      "log.logger",
+      "terms"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "单用户每小时限流多少次算异常",
+    "expectedKeywords": [
+      "单用户",
+      "20",
+      "小时"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "NullPointerException 一般在哪个服务出现",
+    "expectedKeywords": [
+      "NullPointerException",
+      "服务",
+      "Controller"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "business.amount 单位 什么意思",
+    "expectedKeywords": [
+      "business.amount",
+      "分"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么查某个端点的 P99 延迟",
+    "expectedKeywords": [
+      "http.request.endpoint",
+      "http.response.time_ms",
+      "percentiles",
+      "p99"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "异常日志每小时超过几条条需要关注",
+    "expectedKeywords": [
+      "异常",
+      "30",
+      "小时"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "rows_examined 域 扫描行数范围",
+    "expectedKeywords": [
+      "slow_query.rows_examined",
+      "1000",
+      "500000"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "security 类型的日志包含哪两种子类型",
+    "expectedKeywords": [
+      "security",
+      "rate_limit",
+      "attack"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "orders 表为什么慢",
+    "expectedKeywords": [
+      "orders",
+      "数据增长快",
+      "user_id",
+      "create_time",
+      "联合索引"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "如何搜索支付失败对应的异常日志",
+    "expectedKeywords": [
+      "支付失败",
+      "exception",
+      "payment"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "每天日志存在哪个索引里",
+    "expectedKeywords": [
+      "ai-agent-station-logs",
+      "YYYY.MM.DD",
+      "按天"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "查一下故障时间窗口内发生了什么",
+    "expectedKeywords": [
+      "filter",
+      "range",
+      "@timestamp",
+      "gte",
+      "lte"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "5xx 错误率多少触发告警",
+    "expectedKeywords": [
+      "5xx",
+      "错误率",
+      "5%"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "body_size 域 的单位和范围",
+    "expectedKeywords": [
+      "body_size",
+      "100",
+      "50000"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "业务日志里 channel 域 记录了哪些值",
+    "expectedKeywords": [
+      "business.channel",
+      "APP",
+      "H5",
+      "PC",
+      "MINIPROGRAM"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "哪张表慢查询最多，平均耗时多长",
+    "expectedKeywords": [
+      "slow_query.table",
+      "avg_dur",
+      "terms"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "http.response.time_ms 取值范围是多少个",
+    "expectedKeywords": [
+      "http.response.time_ms",
+      "5",
+      "3000"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "如何搜索数据连接池是否耗尽",
+    "expectedKeywords": [
+      "Connection pool exhausted",
+      "Time",
+      "exception"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "query 语法：怎么检索北京地区被限流的用户",
+    "expectedKeywords": [
+      "geo.city",
+      "北京",
+      "rate_limit",
+      "terms"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "error.stack_trace field 存了什么",
+    "expectedKeywords": [
+      "error.stack_trace",
+      "stack_trace",
+      "堆栈"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "这次攻击影响了哪些方面",
+    "expectedKeywords": [
+      "attack",
+      "rate_limit",
+      "impact",
+      "http_errors"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "query 语法：怎么查北京地区被限流的用户",
+    "expectedKeywords": [
+      "geo.city",
+      "北京",
+      "rate_limit",
+      "terms"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "rate_limit 和 frequency_limit 有什么区别",
+    "expectedKeywords": [
+      "rate_limit",
+      "frequency_limit",
+      "瞬时",
+      "长窗口"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "ai_client_model 表为什么慢",
+    "expectedKeywords": [
+      "ai_client_model",
+      "model",
+      "api",
+      "JOIN",
+      "三级关联"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "日志索引怎么命名？在哪个索引 存储",
+    "expectedKeywords": [
+      "ai-agent-station-logs",
+      "YYYY.MM.DD",
+      "按天滚动"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "限流日志的 HTTP 响应码固定为多少",
+    "expectedKeywords": [
+      "429",
+      "status_code"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "rows_examined 字段 扫描行数范围",
+    "expectedKeywords": [
+      "slow_query.rows_examined",
+      "1000",
+      "500000"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "CRITICAL 风险等级对应几条分",
+    "expectedKeywords": [
+      "CRITICAL",
+      "80",
+      "100",
+      "ERROR"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "5xx 错误率多少个触发告警",
+    "expectedKeywords": [
+      "5xx",
+      "错误率",
+      "5%"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "用什么条件查某个端点的 QPS 和错误分布",
+    "expectedKeywords": [
+      "endpoint",
+      "qps",
+      "status_dist",
+      "p99"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "Elasticsearch 的地址是什么，怎么查 ES 集群健康状态",
+    "expectedKeywords": [
+      "47.94.17.237",
+      "9200",
+      "_cluster/health"
+    ],
+    "expectedDocIds": [
+      "doc_02",
+      "doc_03"
+    ],
+    "minRelevantDocs": 2
+  },
+  {
+    "query": "怎么查某用户被限流了多少次",
+    "expectedKeywords": [
+      "rate_limit",
+      "user.id"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "ELK 部署在哪个服务器，IP 什么意思",
+    "expectedKeywords": [
+      "47.94.17.237",
+      "9200",
+      "5601",
+      "elasticsearch",
+      "kibana"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "业务日志里 product_id 有哪些可选值",
+    "expectedKeywords": [
+      "product_id",
+      "product_001",
+      "product_002",
+      "product_008"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "用什么条件查哪些 IP 既有攻击行为又触发限流",
+    "expectedKeywords": [
+      "remote_ip",
+      "rate_limit",
+      "attack",
+      "by_ip",
+      "高危"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "访问日志记录哪些 HTTP 请求信息",
+    "expectedKeywords": [
+      "http.request.method",
+      "http.request.endpoint",
+      "http.response.status_code",
+      "http.response.time_ms"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "如何搜索支付成功的总金额",
+    "expectedKeywords": [
+      "支付成功",
+      "sum",
+      "business.amount"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "OrderExpireJob 什么意思任务",
+    "expectedKeywords": [
+      "OrderExpireJob",
+      "scheduled_task"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么筛选数据连接池是否耗尽",
+    "expectedKeywords": [
+      "Connection pool exhausted",
+      "Time",
+      "exception"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "过去一小时支付成功率下降了多少",
+    "expectedKeywords": [
+      "支付",
+      "per_hour",
+      "business.action"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "如何搜索全表扫描的慢查询",
+    "expectedKeywords": [
+      "全表扫描",
+      "slow_query.reason",
+      "text"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么筛选每个端点的错误率排行",
+    "expectedKeywords": [
+      "endpoint",
+      "error_rate",
+      "bucket_script",
+      "500"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "索引前缀 代表什么",
+    "expectedKeywords": [
+      "ai-agent-station-logs",
+      "前缀"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "安全攻击类型 attack_type 有哪些",
+    "expectedKeywords": [
+      "attack_type",
+      "sql_injection",
+      "xss_attack",
+      "csrf_blocked",
+      "brute_force",
+      "login_fail",
+      "path_traversal",
+      "file_upload_abuse"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "CRITICAL 风险等级对应多少个分",
+    "expectedKeywords": [
+      "CRITICAL",
+      "80",
+      "100",
+      "ERROR"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "如何搜索每张表的慢查询数量和平均耗时",
+    "expectedKeywords": [
+      "slow_query.table",
+      "by_table",
+      "avg_dur",
+      "by_reason"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "ai_agent_flow_config 表按什么字段查",
+    "expectedKeywords": [
+      "ai_agent_flow_config",
+      "agent_id",
+      "索引"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "如果发现 sql_injection 攻击，应该同时查哪些关联日志",
+    "expectedKeywords": [
+      "sql_injection",
+      "attack",
+      "access",
+      "exception",
+      "trace.id"
+    ],
+    "expectedDocIds": [
+      "doc_01",
+      "doc_02",
+      "doc_03"
+    ],
+    "minRelevantDocs": 3
+  },
+  {
+    "query": "怎么筛选某个 trace.id 的完整请求链路",
+    "expectedKeywords": [
+      "trace.id",
+      "sort",
+      "asc"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "ResourceAccessException 和 TimeoutException 的区别",
+    "expectedKeywords": [
+      "ResourceAccessException",
+      "TimeoutException",
+      "网络",
+      "超时"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "CRITICAL 占比多少个算异常",
+    "expectedKeywords": [
+      "CRITICAL",
+      "20%",
+      "10分钟"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么检索全表扫描的慢查询",
+    "expectedKeywords": [
+      "全表扫描",
+      "slow_query.reason",
+      "text"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "用 traceId 查整个请求链路怎么查",
+    "expectedKeywords": [
+      "trace.id",
+      "sort"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "message 域和 error.message 有什么区别",
+    "expectedKeywords": [
+      "message",
+      "error.message",
+      "error.stack_trace"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "business.result 有哪几种取值",
+    "expectedKeywords": [
+      "business.result",
+      "SUCCESS",
+      "FAIL",
+      "PENDING"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "如何按 business.action 看成功率趋势",
+    "expectedKeywords": [
+      "business.action",
+      "business.result",
+      "date_histogram"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "CacheRefreshJob 失败了怎么排查",
+    "expectedKeywords": [
+      "CacheRefreshJob",
+      "执行失败",
+      "exception"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么筛选异常按类型和服务的分布",
+    "expectedKeywords": [
+      "error.type",
+      "log.logger",
+      "by_type",
+      "by_service"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么筛选支付成功的总金额",
+    "expectedKeywords": [
+      "支付成功",
+      "sum",
+      "business.amount"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "哪些服务类会记录异常日志",
+    "expectedKeywords": [
+      "AiAgentController",
+      "RagController",
+      "AutoAgentExecuteStrategy",
+      "RagRepository",
+      "OrderService",
+      "PaymentService"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "攻击检测引擎 detection_engine 有哪些",
+    "expectedKeywords": [
+      "detection_engine",
+      "regex",
+      "rule_engine",
+      "waf_rule"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "用什么条件查攻击穿透（blocked=false 且 CRITICAL）",
+    "expectedKeywords": [
+      "blocked",
+      "false",
+      "CRITICAL",
+      "穿透"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "攻击日志里 endpoint 域 表示什么",
+    "expectedKeywords": [
+      "security.endpoint",
+      "endpoint"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么筛选一次攻击事件的影响范围",
+    "expectedKeywords": [
+      "attack",
+      "rate_limit",
+      "exception",
+      "per_minute",
+      "http_errors"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "LOW 风险等级需要告警吗",
+    "expectedKeywords": [
+      "LOW",
+      "0",
+      "39",
+      "INFO",
+      "仅记录"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "MCP 工具的 ES_HOST 指向哪里",
+    "expectedKeywords": [
+      "ES_HOST",
+      "47.93.200.142",
+      "9200"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么筛选某个任务最近是否有失败",
+    "expectedKeywords": [
+      "scheduled_task",
+      "执行失败",
+      "result"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "慢查询日志的 SQL 完整语句存在哪个属性",
+    "expectedKeywords": [
+      "slow_query.sql",
+      "sql"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "最近一周有哪些定时任务失败了",
+    "expectedKeywords": [
+      "scheduled_task",
+      "失败",
+      "一周"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "有哪些 日志分类？怎么用 tags 区分",
+    "expectedKeywords": [
+      "tags",
+      "access",
+      "business",
+      "security",
+      "slow_query",
+      "exception",
+      "scheduled_task"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "列出所有 scheduled_task 的名称，并告诉哪个最容易失败",
+    "expectedKeywords": [
+      "scheduled_task.name",
+      "OrderExpireJob",
+      "PaymentReconcileJob",
+      "失败"
+    ],
+    "expectedDocIds": [
+      "doc_01",
+      "doc_03"
+    ],
+    "minRelevantDocs": 2
+  },
+  {
+    "query": "算一下今天到目前为止的交易总额",
+    "expectedKeywords": [
+      "GMV",
+      "sum",
+      "business.amount",
+      "now/d"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "业务日志里 channel 字段 有哪些值",
+    "expectedKeywords": [
+      "business.channel",
+      "APP",
+      "H5",
+      "PC",
+      "MINIPROGRAM"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "slow_query.database 记录了哪个数据库",
+    "expectedKeywords": [
+      "slow_query.database",
+      "ai-agent-station-study"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "慢查询最多的表是哪个？这个表在数据库里是干什么的",
+    "expectedKeywords": [
+      "slow_query.table",
+      "orders",
+      "支付表",
+      "数据增长快"
+    ],
+    "expectedDocIds": [
+      "doc_01",
+      "doc_02"
+    ],
+    "minRelevantDocs": 2
+  },
+  {
+    "query": "risk.level 分哪四个等级",
+    "expectedKeywords": [
+      "risk.level",
+      "CRITICAL",
+      "HIGH",
+      "MEDIUM",
+      "LOW"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "rag_document 表存了什么",
+    "expectedKeywords": [
+      "rag_document",
+      "文档",
+      "agent_id",
+      "status"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么判断系统整体健康度？需要查哪些指标",
+    "expectedKeywords": [
+      "P99",
+      "错误率",
+      "慢查询",
+      "限流",
+      "健康度"
+    ],
+    "expectedDocIds": [
+      "doc_02",
+      "doc_03"
+    ],
+    "minRelevantDocs": 2
+  },
+  {
+    "query": "JsonMappingException 是什么含义 原因",
+    "expectedKeywords": [
+      "JsonMappingException",
+      "JSON",
+      "序列化"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "error.stack_trace 字段 存了什么",
+    "expectedKeywords": [
+      "error.stack_trace",
+      "stack_trace",
+      "堆栈"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "connection_id 属性 范围",
+    "expectedKeywords": [
+      "slow_query.connection_id",
+      "1",
+      "100"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "响应状态码包括哪些",
+    "expectedKeywords": [
+      "status_code",
+      "200",
+      "201",
+      "400",
+      "401",
+      "403",
+      "404",
+      "429",
+      "500",
+      "502",
+      "503"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么查某段时间内的 QPS 趋势",
+    "expectedKeywords": [
+      "date_histogram",
+      "per_hour",
+      "access"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "HIGH 风险等级对应多少个分",
+    "expectedKeywords": [
+      "HIGH",
+      "60",
+      "79",
+      "ERROR"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "security.payload 属性 存了什么",
+    "expectedKeywords": [
+      "security.payload",
+      "payload",
+      "SQL",
+      "script",
+      "passwd"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "ES 中 http.request.endpoint 有哪些取值？哪个被攻击最多",
+    "expectedKeywords": [
+      "endpoint",
+      "/api/v1/agent/auto_agent",
+      "/api/v1/payment/pay",
+      "security.endpoint"
+    ],
+    "expectedDocIds": [
+      "doc_01",
+      "doc_03"
+    ],
+    "minRelevantDocs": 2
+  },
+  {
+    "query": "ai_client_config 表是干什么的",
+    "expectedKeywords": [
+      "ai_client_config",
+      "关联配置",
+      "多对多"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "统计每种日志各有多少条",
+    "expectedKeywords": [
+      "tags",
+      "terms",
+      "aggs"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "限流日志的 HTTP 响应码固定为多少个",
+    "expectedKeywords": [
+      "429",
+      "status_code"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "限流 QPS 正常值{是多少}，什么时候告警",
+    "expectedKeywords": [
+      "QPS",
+      "50",
+      "100",
+      "持续5分钟"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "CRITICAL 级别限流集中在哪些接口，分别对应什么限流策略",
+    "expectedKeywords": [
+      "CRITICAL",
+      "endpoint",
+      "rate_limit.type",
+      "rate_limit"
+    ],
+    "expectedDocIds": [
+      "doc_01",
+      "doc_02",
+      "doc_03"
+    ],
+    "minRelevantDocs": 3
+  },
+  {
+    "query": "给我一份系统周报，需要包含哪些维度的数据",
+    "expectedKeywords": [
+      "周报",
+      "QPS",
+      "错误率",
+      "支付成功",
+      "GMV",
+      "慢查询",
+      "异常",
+      "安全事件"
+    ],
+    "expectedDocIds": [
+      "doc_01",
+      "doc_02",
+      "doc_03"
+    ],
+    "minRelevantDocs": 3
+  },
+  {
+    "query": "怎么检索故障时间窗口内的所有日志",
+    "expectedKeywords": [
+      "filter",
+      "range",
+      "gte",
+      "lte",
+      "@timestamp"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "如何搜索攻击穿透（blocked=false）的事件",
+    "expectedKeywords": [
+      "blocked",
+      "false",
+      "CRITICAL"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "login_fail 和 brute_force 的区别",
+    "expectedKeywords": [
+      "login_fail",
+      "brute_force",
+      "异地异常登录"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "user_blacklist 黑名单误加怎么办",
+    "expectedKeywords": [
+      "user_blacklist",
+      "误判",
+      "审计"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "ELK 上怎么同时查出慢查询和对应时间段的异常日志",
+    "expectedKeywords": [
+      "slow_query",
+      "exception",
+      "per_hour",
+      "date_histogram",
+      "bool"
+    ],
+    "expectedDocIds": [
+      "doc_01",
+      "doc_03"
+    ],
+    "minRelevantDocs": 2
+  },
+  {
+    "query": "哪些 API 端点最容易被攻击？攻击类型分布",
+    "expectedKeywords": [
+      "endpoint",
+      "attack_type",
+      "security.endpoint",
+      "api/v1"
+    ],
+    "expectedDocIds": [
+      "doc_01",
+      "doc_03"
+    ],
+    "minRelevantDocs": 2
+  },
+  {
+    "query": "怎么查某个 IP 的攻击历史",
+    "expectedKeywords": [
+      "remote_ip",
+      "attack",
+      "rate_limit",
+      "bool"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "frequency_limit 的误判风险高吗？怎么查看是不是误判",
+    "expectedKeywords": [
+      "frequency_limit",
+      "误判",
+      "user_agent",
+      "okhttp",
+      "python-requests"
+    ],
+    "expectedDocIds": [
+      "doc_01",
+      "doc_02"
+    ],
+    "minRelevantDocs": 2
+  },
+  {
+    "query": "ES 集群名称 代表什么",
+    "expectedKeywords": [
+      "docker-cluster",
+      "cluster.name"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "slow_query.duration_ms 多{少}算慢",
+    "expectedKeywords": [
+      "slow_query.duration_ms",
+      "500",
+      "15000"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "给一个查询：找错误率最高的 10 个接口",
+    "expectedKeywords": [
+      "endpoint",
+      "error_rate",
+      "500"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "P99 延迟超过几条需要关注",
+    "expectedKeywords": [
+      "P99",
+      "3000ms",
+      "1000ms"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "有没有被攻击了但没拦截住的请求",
+    "expectedKeywords": [
+      "blocked",
+      "false",
+      "CRITICAL",
+      "穿透"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "七种日志分别对应什么 tags 值",
+    "expectedKeywords": [
+      "tags",
+      "access",
+      "business",
+      "rate_limit",
+      "attack",
+      "slow_query",
+      "exception",
+      "scheduled_task"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "security.payload field 存了什么",
+    "expectedKeywords": [
+      "security.payload",
+      "payload",
+      "SQL",
+      "script",
+      "passwd"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "MEDIUM 风险等级对应几条分，日志级别 是什么含义",
+    "expectedKeywords": [
+      "MEDIUM",
+      "40",
+      "59",
+      "WARN"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "日志有{哪些}类型？tags 字段 都有什么值",
+    "expectedKeywords": [
+      "access",
+      "business",
+      "security",
+      "slow_query",
+      "exception",
+      "scheduled_task",
+      "rate_limit",
+      "attack"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "order_no 的格式 是什么",
+    "expectedKeywords": [
+      "order_no",
+      "ORD",
+      "年月日",
+      "数字"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "MEDIUM 风险等级对应多少次分，日志级别 是什么含义",
+    "expectedKeywords": [
+      "MEDIUM",
+      "40",
+      "59",
+      "WARN"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "Kibana 端口 {是多少}",
+    "expectedKeywords": [
+      "5601",
+      "kibana"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "慢查询每小时超过多少条算异常",
+    "expectedKeywords": [
+      "慢查询",
+      "50",
+      "小时"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "device_blacklist 为什么会误判",
+    "expectedKeywords": [
+      "device_blacklist",
+      "误判",
+      "多人共用设备"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "elasticsearch-mcp-server 配置在哪张表",
+    "expectedKeywords": [
+      "ai_client_tool_mcp",
+      "mcp_id",
+      "5007",
+      "npx"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "所有日志共用的字段 都有什么",
+    "expectedKeywords": [
+      "@timestamp",
+      "log.level",
+      "log.logger",
+      "trace.id",
+      "tags"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "rate_limit.reason 有哪些原因",
+    "expectedKeywords": [
+      "rate_limit.reason",
+      "访问频率过高",
+      "恶意刷单",
+      "异常IP访问",
+      "超过每日限制",
+      "黑名单用户",
+      "设备指纹异常"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "慢查询日志记录了哪些数据库表",
+    "expectedKeywords": [
+      "slow_query.table",
+      "ai_client",
+      "orders",
+      "payments",
+      "products",
+      "group_buy_records",
+      "rag_document"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "被攻击后怎么评估影响范围？查哪些指标",
+    "expectedKeywords": [
+      "attack",
+      "http_errors",
+      "exception",
+      "rate_limit",
+      "impact"
+    ],
+    "expectedDocIds": [
+      "doc_02",
+      "doc_03"
+    ],
+    "minRelevantDocs": 2
+  },
+  {
+    "query": "order_no 的格式 指什么",
+    "expectedKeywords": [
+      "order_no",
+      "ORD",
+      "年月日",
+      "数字"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "CRITICAL 占比多少次算异常",
+    "expectedKeywords": [
+      "CRITICAL",
+      "20%",
+      "10分钟"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么筛选某个 IP 的攻击历史",
+    "expectedKeywords": [
+      "remote_ip",
+      "attack",
+      "rate_limit",
+      "bool"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么检索攻击穿透（blocked=false）的事件",
+    "expectedKeywords": [
+      "blocked",
+      "false",
+      "CRITICAL"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "ELK 部署在哪个服务器，IP 指什么",
+    "expectedKeywords": [
+      "47.94.17.237",
+      "9200",
+      "5601",
+      "elasticsearch",
+      "kibana"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "攻击日志里 endpoint field 表示什么",
+    "expectedKeywords": [
+      "security.endpoint",
+      "endpoint"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么筛选某个服务的异常分布",
+    "expectedKeywords": [
+      "error.type",
+      "log.logger",
+      "terms"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "有哪些 索引？ES 索引 是什么 格式",
+    "expectedKeywords": [
+      "ai-agent-station-logs",
+      "YYYY.MM.DD",
+      "Index Pattern",
+      "ai-agent-station-logs-*"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么筛选每张表的慢查询数量和平均耗时",
+    "expectedKeywords": [
+      "slow_query.table",
+      "by_table",
+      "avg_dur",
+      "by_reason"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "如果 P99 超过 3 秒，应该查哪些日志找原因",
+    "expectedKeywords": [
+      "P99",
+      "3000",
+      "slow_query",
+      "exception",
+      "access"
+    ],
+    "expectedDocIds": [
+      "doc_01",
+      "doc_02",
+      "doc_03"
+    ],
+    "minRelevantDocs": 3
+  },
+  {
+    "query": "怎么检索访问日志的 P99 延迟变化",
+    "expectedKeywords": [
+      "http.response.time_ms",
+      "percentiles",
+      "p99",
+      "access"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "Kibana 报了 500 错误怎么修",
+    "expectedKeywords": [
+      "DELETE",
+      ".kibana",
+      "docker restart kibana"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么检索某个端点的 QPS 和错误分布",
+    "expectedKeywords": [
+      "endpoint",
+      "qps",
+      "status_dist",
+      "p99"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "想查最近一周各城市的安全事件分布，给个 ES 查询",
+    "expectedKeywords": [
+      "geo.city",
+      "security",
+      "terms",
+      "aggs",
+      "date_histogram"
+    ],
+    "expectedDocIds": [
+      "doc_01",
+      "doc_03"
+    ],
+    "minRelevantDocs": 2
+  },
+  {
+    "query": "用户 VIP 等级的范围",
+    "expectedKeywords": [
+      "user.vip_level",
+      "0",
+      "5"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么检索攻击源 IP Top 20",
+    "expectedKeywords": [
+      "remote_ip",
+      "attack",
+      "by_ip",
+      "top_ips"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "http.response.time_ms 取值范围是多少次",
+    "expectedKeywords": [
+      "http.response.time_ms",
+      "5",
+      "3000"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "Kibana 配 Index Pattern 用什么",
+    "expectedKeywords": [
+      "ai-agent-station-logs-*",
+      "Index Pattern"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么筛选访问日志的 P99 延迟变化",
+    "expectedKeywords": [
+      "http.response.time_ms",
+      "percentiles",
+      "p99",
+      "access"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "每种日志每天写入几条条",
+    "expectedKeywords": [
+      "500",
+      "200",
+      "100",
+      "50",
+      "80",
+      "40",
+      "30"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么检索异常按类型和服务的分布",
+    "expectedKeywords": [
+      "error.type",
+      "log.logger",
+      "by_type",
+      "by_service"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "payments 表慢查询常见原因",
+    "expectedKeywords": [
+      "payments",
+      "状态字段",
+      "索引"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "scheduled_task.result 域 包含什么信息",
+    "expectedKeywords": [
+      "scheduled_task.result",
+      "处理",
+      "条",
+      "失败"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "message 列和 error.message 有什么区别",
+    "expectedKeywords": [
+      "message",
+      "error.message",
+      "error.stack_trace"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么检索哪些 IP 既有攻击行为又触发限流",
+    "expectedKeywords": [
+      "remote_ip",
+      "rate_limit",
+      "attack",
+      "by_ip",
+      "高危"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "ES 版本 是什么，用的什么镜像",
+    "expectedKeywords": [
+      "7.17.28",
+      "aliyuncs.com",
+      "elasticsearch",
+      "xfg-studio"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么筛选攻击源 IP Top 20",
+    "expectedKeywords": [
+      "remote_ip",
+      "attack",
+      "by_ip",
+      "top_ips"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "业务日志的 user.id 范围",
+    "expectedKeywords": [
+      "user.id",
+      "user_10001",
+      "user_30002"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "用户支付时 5xx 错误怎么排查？查哪些日志和字段",
+    "expectedKeywords": [
+      "5xx",
+      "payment",
+      "access",
+      "exception",
+      "slow_query"
+    ],
+    "expectedDocIds": [
+      "doc_01",
+      "doc_02",
+      "doc_03"
+    ],
+    "minRelevantDocs": 3
+  },
+  {
+    "query": "业务日志记录了哪些 action",
+    "expectedKeywords": [
+      "business.action",
+      "用户注册",
+      "创建订单",
+      "支付成功",
+      "退款到账",
+      "加入拼团"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么查所有定时任务的平均耗时",
+    "expectedKeywords": [
+      "scheduled_task",
+      "avg",
+      "duration_ms"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "数据库有哪些核心表",
+    "expectedKeywords": [
+      "ai_client",
+      "ai_client_config",
+      "orders",
+      "payments",
+      "users",
+      "products",
+      "group_buy_records",
+      "ai_agent",
+      "rag_document"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "query 语法：怎么查限流日志 CRITICAL 级别",
+    "expectedKeywords": [
+      "rate_limit",
+      "CRITICAL",
+      "bool",
+      "must"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "rate_limit.request_count 和 limit_threshold 的关系",
+    "expectedKeywords": [
+      "rate_limit.request_count",
+      "rate_limit.limit_threshold",
+      "5",
+      "200",
+      "10",
+      "50"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "限流阈值设多少合适？查一下最近被限流的 QPS",
+    "expectedKeywords": [
+      "limit_threshold",
+      "QPS",
+      "rate_limit",
+      "告警"
+    ],
+    "expectedDocIds": [
+      "doc_02",
+      "doc_03"
+    ],
+    "minRelevantDocs": 2
+  },
+  {
+    "query": "geo.city 记录了哪些城市",
+    "expectedKeywords": [
+      "geo.city",
+      "北京",
+      "上海",
+      "广州",
+      "深圳",
+      "杭州",
+      "成都",
+      "武汉",
+      "西安",
+      "南京",
+      "重庆"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "安全攻击有多少种类型？每种对应的 risk.level 是什么",
+    "expectedKeywords": [
+      "attack_type",
+      "sql_injection",
+      "risk.level",
+      "CRITICAL",
+      "HIGH"
+    ],
+    "expectedDocIds": [
+      "doc_01",
+      "doc_02"
+    ],
+    "minRelevantDocs": 2
+  },
+  {
+    "query": "scheduled_task.action 有哪几种状态",
+    "expectedKeywords": [
+      "scheduled_task.action",
+      "执行开始",
+      "处理中",
+      "执行完成",
+      "执行失败"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "帮我查：来自同一个 IP 的限流和攻击记录",
+    "expectedKeywords": [
+      "remote_ip",
+      "rate_limit",
+      "attack",
+      "高危"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "http.request.method 支持哪些值",
+    "expectedKeywords": [
+      "GET",
+      "POST",
+      "PUT",
+      "DELETE",
+      "http.request.method"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么查各类日志的数量分布",
+    "expectedKeywords": [
+      "tags",
+      "terms",
+      "aggs",
+      "date_histogram"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "如何搜索今天的 GMV",
+    "expectedKeywords": [
+      "GMV",
+      "支付成功",
+      "sum",
+      "business.amount",
+      "now/d"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "所有日志共用的field 都有什么",
+    "expectedKeywords": [
+      "@timestamp",
+      "log.level",
+      "log.logger",
+      "trace.id",
+      "tags"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "ES 版本 是什么含义，用的什么镜像",
+    "expectedKeywords": [
+      "7.17.28",
+      "aliyuncs.com",
+      "elasticsearch",
+      "xfg-studio"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "cron 列 记录了哪些表达式",
+    "expectedKeywords": [
+      "scheduled_task.cron",
+      "cron"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "数据库 orders 表的慢查询 SQL 长什么样，怎么优化",
+    "expectedKeywords": [
+      "orders",
+      "slow_query.sql",
+      "rows_examined",
+      "联合索引"
+    ],
+    "expectedDocIds": [
+      "doc_01",
+      "doc_02"
+    ],
+    "minRelevantDocs": 2
+  },
+  {
+    "query": "异常日志 error.type 记录了哪些类型",
+    "expectedKeywords": [
+      "error.type",
+      "NullPointerException",
+      "SQLException",
+      "TimeoutException",
+      "OutOfMemoryError",
+      "JsonMappingException"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "PaymentReconcileJob 执行频率",
+    "expectedKeywords": [
+      "PaymentReconcileJob",
+      "cron"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么查每个端点的错误率排行",
+    "expectedKeywords": [
+      "endpoint",
+      "error_rate",
+      "bucket_script",
+      "500"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "用什么条件查支付失败对应的异常日志",
+    "expectedKeywords": [
+      "支付失败",
+      "exception",
+      "payment"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "访问日志里有哪些 API 端点",
+    "expectedKeywords": [
+      "/api/v1/agent/auto_agent",
+      "/api/v1/order/create",
+      "/api/v1/payment/pay"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "限流类型 rate_limit.type 有哪些值",
+    "expectedKeywords": [
+      "rate_limit.type",
+      "rate_limit",
+      "frequency_limit",
+      "ip_blacklist",
+      "daily_limit",
+      "user_blacklist",
+      "device_blacklist"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "定时任务执行耗时 duration_ms 范围",
+    "expectedKeywords": [
+      "scheduled_task.duration_ms",
+      "100",
+      "600000"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "怎么检索每个渠道的支付成功率",
+    "expectedKeywords": [
+      "business.channel",
+      "支付",
+      "by_result",
+      "SUCCESS"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "security.blocked field 含义",
+    "expectedKeywords": [
+      "security.blocked",
+      "blocked",
+      "拦截",
+      "true",
+      "false"
+    ],
+    "expectedDocIds": [
+      "doc_01"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "ES 集群名称 什么意思",
+    "expectedKeywords": [
+      "docker-cluster",
+      "cluster.name"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "MCP 工具怎么注册的",
+    "expectedKeywords": [
+      "MCP",
+      "ai_client_tool_mcp",
+      "STDIO",
+      "elasticsearch-mcp-server"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "products 表慢查询优化建议",
+    "expectedKeywords": [
+      "products",
+      "聚合查询",
+      "count",
+      "group by"
+    ],
+    "expectedDocIds": [
+      "doc_02"
+    ],
+    "minRelevantDocs": 1
+  },
+  {
+    "query": "如何搜索慢查询和异常在同一时间窗口是否同时升高",
+    "expectedKeywords": [
+      "slow_query",
+      "exception",
+      "per_hour",
+      "date_histogram"
+    ],
+    "expectedDocIds": [
+      "doc_03"
+    ],
+    "minRelevantDocs": 1
+  }
+]
